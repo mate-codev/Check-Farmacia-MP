@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0%;
+}
+body {
+	width: 100%;
+}
+header {
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(/Farmacia/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+header img {
+	width: 5rem;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: green;
+}
+.nav-a {
+	height: 2rem;
+	text-align: center;
+	width: 8rem;
+	margin: 0.4rem;
+	font-size: 1.4rem;
+	color: white;
+	background-color: black;
+}
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.image-1 {
+	flex-direction: column;
+	text-align: center;
+	margin: 2rem;
+	width: 15%;
+	background-color: rgba(6, 131, 6, 0.681);
+	padding: 1%;
+}
+.image {
+	margin-top: 1rem;
+	width: 90%;
+}
+.div-1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.div-2 {
+	font-size: 1rem;
+}
+.image-2 {
+	width: 30%;
+	border-radius: 2rem;
+}
+footer {
+	font-size: 1.1rem;
+	width: 100%;
+	height: 7vh;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+	background-color: rgba(68, 235, 152, 0.789);
+	margin-top: 1rem;
+}
+.form {
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	border: 1px solid rgb(102, 99, 99);
+}
+fieldset {
+	border: transparent;
+}
+.contact {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	color: white;
+	height: 2.5rem;
+	background-color: black;
+	padding: 0.3rem;
+}
+footer p {
+	font-weight: bold;
+}
+
+/* Media Queries **/
+@media only screen and (max-width: 426px) {
+	main {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.image-1 {
+		flex-direction: column;
+		text-align: center;
+		margin: 2%;
+		width: 80%;
+		background-color: rgba(6, 131, 6, 0.681);
+		padding: 1%;
+	}
+	.image {
+		margin-top: 0;
+		width: 70%;
+	}
+
+	.div-1 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.image-2 {
+		width: 80%;
+		border-radius: 2rem;
+	}
+	footer {
+		height: 14vh;
+		display: flex;
+		flex-direction: column;
+	}
+	footer {
+		font-size: 0.9rem;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	footer {
+		height: 12vh;
+	}
+}
